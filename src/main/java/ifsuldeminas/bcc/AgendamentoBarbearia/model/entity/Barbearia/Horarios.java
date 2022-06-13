@@ -21,11 +21,11 @@ public class Horarios {
     @ManyToOne
     private Agenda agendas;
 
-    @OneToMany
-    @JoinColumn(name="idHorarios")
+    @ManyToMany(mappedBy = "horarios")
     private Set<Funcionario> funcionarios;
     @ManyToMany
     private Set<FormaPagamento> formaDePagamento;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date data;
     private String hora;
 }
