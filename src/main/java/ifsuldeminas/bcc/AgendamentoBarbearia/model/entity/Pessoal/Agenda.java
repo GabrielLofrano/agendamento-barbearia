@@ -1,5 +1,5 @@
-package ifsuldeminas.bcc.AgendamentoBarbearia.model.entity;
-import ifsuldeminas.bcc.AgendamentoBarbearia.model.entity.Pessoal.Cliente;
+package ifsuldeminas.bcc.AgendamentoBarbearia.model.entity.Pessoal;
+import ifsuldeminas.bcc.AgendamentoBarbearia.model.entity.Cliente;
 import ifsuldeminas.bcc.AgendamentoBarbearia.model.entity.Barbearia.Horarios;
 
 import java.util.Set;
@@ -17,4 +17,3 @@ public class Agenda {
     @OneToMany (mappedBy = "agendas")
     private Set<Horarios> horarios;
 }
-

@@ -1,6 +1,6 @@
-package ifsuldeminas.bcc.AgendamentoBarbearia.model.entity.Pessoal;
-import ifsuldeminas.bcc.AgendamentoBarbearia.model.entity.Agenda;
+package ifsuldeminas.bcc.AgendamentoBarbearia.model.entity;
 import ifsuldeminas.bcc.AgendamentoBarbearia.model.entity.Barbearia.Horarios;
+import ifsuldeminas.bcc.AgendamentoBarbearia.model.entity.Pessoal.Agenda;
 
 import javax.persistence.*;
 import java.util.Set;
