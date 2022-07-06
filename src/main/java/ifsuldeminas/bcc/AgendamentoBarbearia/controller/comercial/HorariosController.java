@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/planos")
+@RequestMapping("/Horarios")
 public class HorariosController {
     private HorariosRepository horariosRepository;
 
@@ -67,7 +67,8 @@ public class HorariosController {
             Horarios horariosAux = opt.get();
             //atualizar os dados do plano
             horariosAux.setNome(horarios.getNome());
-            horariosAux.setValorPorMinuto(horarios.getValorPorMinuto());
+            horariosAux.setData(horarios.getData());
+            horariosAux.setData(horarios.getHora());
             //atualizar os dados do plano no BD
             horariosRepository.save(horariosAux);
             return new ResponseEntity<Horarios>(horariosAux, HttpStatus.OK);
